@@ -1,0 +1,2193 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: 'Noto Sans KR', 'Helvetica';
+  color: white;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Norwester';
+  position: fixed;
+  z-index: 9999;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .header-container {
+  width: 100%;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+}
+
+header .header-container .logo {
+  width: 72px;
+  margin-left: 20px;
+}
+
+header .header-container .logo img {
+  height: 65px;
+}
+
+header .header-container .links {
+  width: calc(100% - 72px);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .header-container .links .link {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .header-container .links .link .left-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  height: 100%;
+}
+
+header .header-container .links .link .left-link li {
+  padding-inline: 25px;
+  font-size: 25px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .header-container .links .link .left-link li .dropdown {
+  position: relative;
+  opacity: 1;
+  display: inline-block;
+}
+
+header .header-container .links .link .left-link li .dropdown .dropdown-content {
+  position: absolute;
+  padding: 10px 0 0 0;
+  display: none;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .header-container .links .link .left-link li .dropdown .dropdown-content a {
+  width: 100%;
+  display: block;
+  padding: 10px 40px;
+  margin-top: 2px;
+  background-color: rgba(0, 0, 0, 0.747);
+}
+
+header .header-container .links .link .left-link li .dropdown .dropdown-content a:hover {
+  color: #ffe5b8;
+}
+
+header .header-container .links .link .left-link li .dropdown .dropdown-game {
+  width: 470%;
+  padding: 0;
+  text-align: center;
+  left: 56%;
+}
+
+header .header-container .links .link .left-link li .dropdown .dropdown-content:nth-child(1) {
+  border-bottom-width: 1px;
+  border-bottom-color: #ffe5b8;
+  border-bottom-style: solid;
+}
+
+header .header-container .links .link .left-link li .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+header .header-container .links .link .left-link li a {
+  text-decoration: none;
+  color: white;
+}
+
+header .header-container .links .link .left-link li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  height: 0%;
+  z-index: -1;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+header .header-container .links .link .left-link:hover li::after {
+  height: 100%;
+}
+
+header .header-container .links .link .lan-twitter ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 10px;
+}
+
+header .header-container .links .link .lan-twitter ul li {
+  list-style: none;
+  padding: 0 30px;
+  font-size: 18px;
+  position: relative;
+}
+
+header .header-container .links .link .lan-twitter ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header .header-container .links .link .lan-twitter ul li a .eng {
+  color: #ffe5b8;
+  position: relative;
+}
+
+header .header-container .links .link .lan-twitter ul li a .eng::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  right: -65%;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #ffe5b8;
+}
+
+header .header-container .links .link .lan-twitter ul li .twitter {
+  margin: 5px 0 0 0;
+  width: 30px;
+  height: 30px;
+}
+
+header .header-container .links .link .lan-twitter ul li:nth-child(1):before {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 105%;
+  width: 0.5px;
+  height: 20px;
+  background-color: #ffe5b8;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+main {
+  width: 100%;
+  /* .section-contact::before {
+    content: "";
+    width: 7%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+  } */
+}
+
+main .section {
+  min-height: 100vh;
+  position: relative;
+  margin-top: -70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .section .nav {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+main .section .nav ul {
+  padding: 0 20px;
+  line-height: 1;
+}
+
+main .section .nav ul li {
+  padding: 5px;
+  list-style-type: none;
+  font-family: 'Raleway';
+  font-size: 16px;
+}
+
+main .section .nav ul li a {
+  text-decoration: none;
+  font-weight: 800;
+  color: #7c7c7c;
+}
+
+main .section .nav ul li #on {
+  color: #ffe5b8;
+}
+
+main .section .nav ul li::before {
+  content: "";
+  color: #ffe5b8;
+  font-weight: bold;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #ffe5b8;
+  border-radius: 50%;
+  margin: 2px;
+  margin-left: -1em;
+  margin-right: 10px;
+}
+
+main .section .section-inner {
+  margin: 0 5%;
+  width: 100%;
+  height: 100%;
+}
+
+main .section .section-inner .hero-container {
+  height: 100%;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .section .section-inner .hero-container .hero-logo {
+  margin-bottom: 20px;
+}
+
+main .section .section-inner .hero-container .hero-text {
+  margin-bottom: 50px;
+}
+
+main .section .section-inner .hero-container .hero-text h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+main .section .section-inner .hero-container .hero-text p {
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: 350;
+  line-height: 1.7;
+}
+
+main .section .section-inner .hero-container .hero-button {
+  padding: 0px;
+  position: relative;
+  border-right: 1px #1bb8a5 solid;
+  border-bottom: 1px #1bb8a5 solid;
+}
+
+main .section .section-inner .hero-container .hero-button button {
+  padding: 15px 60px;
+  background: transparent;
+  color: #1bb8a5;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+
+main .section .section-inner .hero-container .hero-button button::after {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: 11px;
+  width: 1px;
+  height: 30px;
+  background-color: #1bb8a5;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+}
+
+main .section .section-inner .hero-container .hero-button button::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 85%;
+  height: 1px;
+  background-color: #1bb8a5;
+}
+
+main .section .section-inner .hero-container .hero-button::before {
+  content: "";
+  position: absolute;
+  bottom: 5%;
+  left: 0%;
+  width: 1px;
+  height: 22px;
+  background-color: #1bb8a5;
+}
+
+main .section .section-inner .hero-container .hero-button::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+  background-color: #1bb8a5;
+}
+
+main .section .section-inner .container {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main .section .section-inner .container .logo {
+  position: absolute;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main .section .section-inner .container .logo .smoll-logo {
+  width: 30px;
+}
+
+main .section .section-inner .container .logo h1 {
+  margin-left: 3px;
+  font-family: 'Norwester';
+  font-size: 28px;
+  font-weight: 400;
+}
+
+main .section .section-inner .container form {
+  height: 100%;
+  padding-top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 50px;
+}
+
+main .section .section-inner .container form .content {
+  width: 23%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+main .section .section-inner .container form .content .title {
+  text-align: right;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+main .section .section-inner .container form .content .title h2 {
+  font-size: 25px;
+  font-weight: 350;
+  letter-spacing: -1px;
+}
+
+main .section .section-inner .container form .content .title h1 {
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: #ffe5b8;
+}
+
+main .section .section-inner .container form .content .button-collection .hero-button {
+  border-right: 1px #1bb8a5 solid;
+  border-bottom: 1px #1bb8a5 solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+main .section .section-inner .container form .content .button-collection .hero-button button {
+  background: transparent;
+  color: #1bb8a5;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  font-family: 'helvetica';
+  padding: 15px 20px;
+  width: 100%;
+}
+
+main .section .section-inner .container form .content .button-collection .hero-button button::after {
+  content: "";
+  position: absolute;
+  top: -12%;
+  left: 12px;
+  width: 1px;
+  height: 33px;
+  background-color: #1bb8a5;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+}
+
+main .section .section-inner .container form .content .button-collection .hero-button button::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 91%;
+  height: 1px;
+  background-color: #1bb8a5;
+}
+
+main .section .section-inner .container form .content .button-collection .hero-button::before {
+  content: "";
+  position: absolute;
+  bottom: 5%;
+  left: 0%;
+  width: 1px;
+  height: 22px;
+  background-color: #1bb8a5;
+}
+
+main .section .section-inner .container form .content .button-collection .hero-button::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+  background-color: #1bb8a5;
+}
+
+main .section .section-inner .container form .content .button-collection .hero-button:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+main .section .section-inner .container form .picture {
+  width: calc(100% - 23%);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .section .section-inner .container form .picture img {
+  width: 100%;
+  height: 100%;
+}
+
+main .section .section-inner .container footer {
+  padding: 0px;
+}
+
+main .section .section-inner .container footer .footer-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #6c4f1a;
+  font-family: 'Norwester';
+  font-weight: 400;
+  font-size: 12px;
+  padding: 0px;
+  margin-top: 10px;
+}
+
+main .section .section-inner .container footer .footer-text h3 {
+  color: white;
+  text-shadow: 0 0 7px #fff, 0 0 10px #6c4f1a, 0 0 21px #6c4f1a, 0 0 42px #6c4f1a, 0 0 82px #6c4f1a;
+  margin-right: 10px;
+}
+
+main .section-lobotomy {
+  background-image: url("https://www.projectmoon.kr/eng/img/main/bg_lobotomy.png");
+  background-size: cover;
+  width: 100%;
+}
+
+main .section-runa {
+  background-image: url("https://www.projectmoon.kr/eng/img/main/bg_ruina.png");
+  background-size: cover;
+  width: 100%;
+}
+
+main .section-film {
+  background-image: url("https://www.projectmoon.kr/eng/img/main/bg_film.png");
+  background-size: cover;
+  width: 100%;
+}
+
+main .section-about {
+  width: 100%;
+  z-index: -9;
+  position: fixed;
+}
+
+main .section-about .section-inner {
+  width: 100%;
+  height: 90vh;
+}
+
+main .section-about .section-inner .container {
+  width: 100%;
+  height: 100%;
+}
+
+main .section-about .section-inner .container #about-img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  opacity: 0.5;
+}
+
+main .section-about .section-inner .container .hero-container {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+}
+
+main .section-about .section-inner .container .hero-container h1 {
+  color: #ffe5b8;
+  text-align: center;
+  font-family: 'Norwester';
+  font-size: 77px;
+}
+
+main .section-about .section-inner .container .hero-container p {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+main .section-vision {
+  margin-top: 89vh;
+  background-color: #000;
+  z-index: 13;
+}
+
+main .section-vision .section-inner {
+  margin: 0% 14%;
+}
+
+main .section-vision .section-inner .about-inner {
+  width: 100%;
+  padding: 10px 0;
+}
+
+main .section-vision .section-inner .about-inner .logo {
+  font-size: 44px;
+  letter-spacing: -5px;
+  font-weight: 500;
+  color: #ffe5b8;
+  padding: 85px 0;
+}
+
+main .section-vision .section-inner .about-inner .vision {
+  width: 100%;
+  position: relative;
+}
+
+main .section-vision .section-inner .about-inner .vision .vision-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0px;
+  height: 100%;
+  gap: 25px;
+}
+
+main .section-vision .section-inner .about-inner .vision .vision-container .item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px;
+  font-weight: 360;
+  position: relative;
+}
+
+main .section-vision .section-inner .about-inner .vision .vision-container .item span {
+  font-size: 22px;
+  letter-spacing: -1px;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+main .section-vision .section-inner .about-inner .vision .vision-container .item .yellow-text {
+  color: #ffe5b8;
+}
+
+main .section-vision .section-inner .about-inner .vision .vision-container .item::before {
+  content: "";
+  background-image: url("https://www.projectmoon.kr/eng/img/contents/box_line.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  left: 27%;
+  top: 0;
+  z-index: 8;
+}
+
+main .section-vision .section-inner .about-inner .vision .vision-container .item::after {
+  content: "";
+  background-image: url("https://www.projectmoon.kr/eng/img/contents/box_line.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  left: -27%;
+  bottom: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 8;
+}
+
+main .section-vision .section-inner .about-inner .vision .opening-the-moon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 95%;
+  gap: 120px;
+  margin: 90px 7%;
+}
+
+main .section-vision .section-inner .about-inner .vision .opening-the-moon .topic {
+  width: 100%;
+}
+
+main .section-vision .section-inner .about-inner .vision .opening-the-moon .topic h2 {
+  font-size: 29px;
+  font-weight: 300;
+}
+
+main .section-vision .section-inner .about-inner .vision .opening-the-moon .topic h3 {
+  color: #ffe5b8;
+  font-size: 34px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+main .section-vision .section-inner .about-inner .vision .opening-the-moon .topic .txt {
+  font-size: 17px;
+  color: rgba(175, 175, 175, 0.747);
+}
+
+main .section-vision .section-inner .about-inner .vision .opening-the-moon .topic span {
+  color: white;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 100;
+}
+
+main .section-vision .section-inner .about-inner .vision .opening-the-moon .img-container {
+  width: 90%;
+  height: 500px;
+  background-color: rebeccapurple;
+  position: relative;
+}
+
+main .section-vision .section-inner .about-inner .vision .opening-the-moon .img-container img {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+main .section-vision .section-inner .about-inner .people {
+  width: 100%;
+  margin-bottom: 0%;
+}
+
+main .section-vision .section-inner .about-inner .people .people-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 0px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+main .section-vision .section-inner .about-inner .people .people-container .title {
+  font-size: 22px;
+  width: 10%;
+  margin-right: 40px;
+  margin-right: 100px;
+}
+
+main .section-vision .section-inner .about-inner .people .people-container .item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 30px;
+}
+
+main .section-vision .section-inner .about-inner .people .people-container .item-container .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+  justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 190px;
+  height: 110px;
+  position: relative;
+  font-weight: 300;
+}
+
+main .section-vision .section-inner .about-inner .people .people-container .item-container .item .orange-text {
+  color: #c39e69;
+  font-size: 16px;
+  letter-spacing: -1px;
+}
+
+main .section-vision .section-inner .about-inner .people .people-container .item-container .item .yellow-text {
+  color: #ffe5b8;
+  font-size: 23px;
+  letter-spacing: -2px;
+}
+
+main .section-vision .section-inner .about-inner .people .people-container .item-container .item::before {
+  content: "";
+  background-image: url("https://www.projectmoon.kr/eng/img/contents/box_line.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  left: 10%;
+  top: 0;
+  z-index: 8;
+}
+
+main .section-vision .section-inner .about-inner .people .people-container .item-container .item::after {
+  content: "";
+  background-image: url("https://www.projectmoon.kr/eng/img/contents/box_line.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 8;
+}
+
+main .section-vision .section-inner .about-inner .people footer {
+  margin-left: -10%;
+  margin-top: 20%;
+  padding: 10px;
+}
+
+main .section-vision .section-inner .about-inner .people footer .footer-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #6c4f1a;
+  font-family: 'Norwester';
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+main .section-vision .section-inner .about-inner .people footer .footer-text h3 {
+  color: white;
+  text-shadow: 0 0 7px #fff, 0 0 10px #6c4f1a, 0 0 21px #6c4f1a, 0 0 42px #6c4f1a, 0 0 82px #6c4f1a;
+  margin-right: 10px;
+}
+
+main .section-game {
+  width: 100%;
+}
+
+main .section-game .section-inner {
+  width: 100%;
+  height: 90vh;
+  background: #1bb8a5;
+  position: fixed;
+  z-index: -9;
+}
+
+main .section-game .section-inner .container {
+  width: 100%;
+}
+
+main .section-game .section-inner .container iframe {
+  width: 100%;
+  height: 90vh;
+}
+
+main .section-banner {
+  width: 100%;
+  height: auto;
+  margin-top: 90vh;
+  z-index: 10;
+  background-image: url("https://www.projectmoon.kr/admincenter/files/game/bg_library[1].jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .section-banner .section-inner .banner {
+  height: 80vh;
+  margin: 0 5%;
+}
+
+main .section-banner .section-inner .banner .hero-container {
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+main .section-banner .section-inner .banner .hero-container #border {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 40px;
+  z-index: 12;
+}
+
+main .section-banner .section-inner .banner .hero-container .hero-text {
+  padding: 40px;
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  position: absolute;
+  left: 6%;
+}
+
+main .section-banner .section-inner .banner .hero-container .hero-text .hero {
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .section-banner .section-inner .banner .hero-container .hero-text .hero .txt {
+  margin-bottom: 30px;
+}
+
+main .section-banner .section-inner .banner .hero-container .hero-text .hero .txt-desc {
+  width: 50%;
+  text-align: left;
+}
+
+main .section-banner .section-inner .banner .hero-container .hero-text .hero .txt-desc .yellow-text {
+  color: #ffe5b8;
+  margin-right: 20px;
+}
+
+main .section-banner .section-inner .our-game {
+  background-image: url("https://www.projectmoon.kr/admincenter/files/game/bg_library_02[1].jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+}
+
+main .section-banner .section-inner .our-game .logo {
+  margin: 0 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 100px 0;
+}
+
+main .section-banner .section-inner .our-game .logo h1 {
+  font-family: 'Norwester';
+}
+
+main .section-banner .section-inner .our-game .game-wrap {
+  margin: 0  4%;
+}
+
+main .section-banner .section-inner .our-game .game-wrap .game-container {
+  width: 100%;
+  padding: 30px;
+}
+
+main .section-banner .section-inner .our-game .game-wrap .game-container .game-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 100px;
+  gap: 50px;
+}
+
+main .section-banner .section-inner .our-game .game-wrap .game-container .game-box .img-container {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  padding: 15px 15px 5px 15px;
+}
+
+main .section-banner .section-inner .our-game .game-wrap .game-container .game-box .img-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  width: 100%;
+}
+
+main .section-banner .section-inner .our-game .game-wrap .game-container .game-box .img-container::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(135deg, #ffe5b8, transparent);
+}
+
+main .section-banner .section-inner .our-game .game-wrap .game-container .game-box .txt-container {
+  font-weight: 300;
+  line-height: 1.8;
+  background-color: black;
+  width: calc(100% - 60%);
+}
+
+main .section-banner .section-inner .our-game .game-wrap .game-container .game-box .txt-container h1 {
+  font-size: 16px;
+  color: #ffe5b8;
+  font-weight: 300;
+}
+
+main .section-banner .section-inner .our-game .game-wrap .game-container .game-box .txt-container p {
+  margin-bottom: 25px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+}
+
+main .section-banner .section-inner .our-game .game-wrap .game-container .game-box .txt-container p span {
+  opacity: 1;
+  color: white;
+}
+
+main .section-banner .section-inner .our-game .game-wrap .game-container .game-box .txt-container .requirement {
+  line-height: 1.5;
+}
+
+main .section-banner .section-inner .our-game .game-wrap .game-container .game-box .txt-container .requirement .second-requirement {
+  margin-bottom: 10px;
+}
+
+main .section-banner .section-inner .our-game .game-wrap .game-container .game-box .txt-container .requirement h2 {
+  font-size: 15px;
+  color: #ffe5b8;
+  font-weight: 300;
+}
+
+main .section-banner .section-inner .our-game .game-wrap .game-container .game-box .txt-container .requirement p {
+  margin: 0;
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+main .section-banner .section-inner .our-game .game-wrap .game-container .game-box .txt-container .requirement p > * {
+  margin-right: 5px;
+}
+
+main .section-banner .section-inner .our-game .game-wrap .game-container .game-box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 100px;
+  gap: 50px;
+}
+
+main .section-banner .section-inner .our-game .game-wrap .game-container .game-box2 .img-container {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  padding: 15px 15px 5px 15px;
+}
+
+main .section-banner .section-inner .our-game .game-wrap .game-container .game-box2 .img-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  width: 100%;
+}
+
+main .section-banner .section-inner .our-game .game-wrap .game-container .game-box2 .img-container::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(135deg, #ffe5b8, transparent);
+}
+
+main .section-banner .section-inner .our-game .game-wrap .game-container .game-box2 .txt-container {
+  font-weight: 300;
+  line-height: 1.8;
+  background-color: black;
+  width: calc(100% - 60%);
+}
+
+main .section-banner .section-inner .our-game .game-wrap .game-container .game-box2 .txt-container h1 {
+  font-size: 16px;
+  color: #ffe5b8;
+  font-weight: 300;
+}
+
+main .section-banner .section-inner .our-game .game-wrap .game-container .game-box2 .txt-container p {
+  margin-bottom: 25px;
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+main .section-banner .section-inner .our-game .game-wrap .game-container .game-box2 .txt-container p span {
+  color: white;
+}
+
+main .section-banner .section-inner .our-game footer {
+  padding: 0px;
+}
+
+main .section-banner .section-inner .our-game footer .footer-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #6c4f1a;
+  font-family: 'Norwester';
+  font-weight: 400;
+  font-size: 12px;
+  padding: 0px;
+  margin: 10px 2%;
+  padding: 40px;
+}
+
+main .section-banner .section-inner .our-game footer .footer-text h3 {
+  color: white;
+  text-shadow: 0 0 7px #fff, 0 0 10px #6c4f1a, 0 0 21px #6c4f1a, 0 0 42px #6c4f1a, 0 0 82px #6c4f1a;
+  margin-right: 10px;
+}
+
+main .section-comic {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://www.projectmoon.kr/eng/img/contents/visual_comics.jpg");
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  overflow: hidden;
+}
+
+main .section-comic .section-inner {
+  margin: 3% 5%;
+  height: 90%;
+  position: relative;
+}
+
+main .section-comic .section-inner .comic-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 150px;
+  z-index: 1;
+}
+
+main .section-comic .section-inner .comic-box .hero-container {
+  font-family: 'Norwester';
+  width: 100%;
+}
+
+main .section-comic .section-inner .comic-box .hero-container .title {
+  margin-bottom: 60px;
+}
+
+main .section-comic .section-inner .comic-box .hero-container .title h2 {
+  font-size: 35px;
+  color: #ffe5b8;
+}
+
+main .section-comic .section-inner .comic-box .hero-container .title h1 {
+  color: #fc3a3a;
+  font-size: 48px;
+}
+
+main .section-comic .section-inner .comic-box .hero-container .title p {
+  font-family: 'noto sans KR';
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+  margin: 10px 0;
+}
+
+main .section-comic .section-inner .comic-box .hero-container .genre, main .section-comic .section-inner .comic-box .hero-container .platforms {
+  font-family: 'Noto sans KR';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+main .section-comic .section-inner .comic-box .hero-container .genre h2, main .section-comic .section-inner .comic-box .hero-container .platforms h2 {
+  margin-right: 10%;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffe5b8;
+}
+
+main .section-comic .section-inner .comic-box .img-container {
+  width: 100%;
+}
+
+main .section-comic .section-inner .comic-box .img-container .poster {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .section-comic .section-inner .comic-box .img-container .poster img {
+  width: 65%;
+  margin-bottom: 20px;
+}
+
+main .section-comic .section-inner .comic-box .img-container .poster .img-txt {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+  font-weight: 200;
+  text-align: center;
+}
+
+main .section-comic .section-inner .comic-box::before {
+  content: "";
+  background-image: url("https://www.projectmoon.kr/eng/img/contents/comics_txt_bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  padding: 50px;
+  top: 50%;
+  left: -17%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: -1;
+}
+
+main .section-comic .section-inner footer {
+  position: absolute;
+  bottom: 3%;
+  left: -2%;
+  padding: 0px 0px 100px 0p;
+}
+
+main .section-comic .section-inner footer .footer-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #6c4f1a;
+  font-family: 'Norwester';
+  font-weight: 400;
+  font-size: 16px;
+  padding: 0px;
+  margin-top: 10px;
+}
+
+main .section-comic .section-inner footer .footer-text h3 {
+  color: #fae5b8;
+  text-shadow: 0 0 7px #fff, 0 0 10px #6c4f1a, 0 0 21px #6c4f1a, 0 0 42px #6c4f1a, 0 0 82px #6c4f1a;
+  margin-right: 10px;
+}
+
+main .section-novel {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://www.projectmoon.kr/eng/img/contents/visual_novel.jpg");
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .section-novel .section-inner {
+  margin: 0 5%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .section-novel .section-inner .novel-box {
+  margin: 0 2%;
+  padding: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+main .section-novel .section-inner .novel-box .hero-container {
+  padding: 50px;
+  width: 100%;
+}
+
+main .section-novel .section-inner .novel-box .hero-container .title {
+  margin-bottom: 30px;
+  line-height: 1.3;
+}
+
+main .section-novel .section-inner .novel-box .hero-container .title h2 {
+  color: #1bb8a5;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+main .section-novel .section-inner .novel-box .hero-container .title h1 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #efc281;
+  margin-bottom: 15px;
+}
+
+main .section-novel .section-inner .novel-box .hero-container .title p {
+  font-size: 20px;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+main .section-novel .section-inner .novel-box .hero-container .genre, main .section-novel .section-inner .novel-box .hero-container .platforms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 45%;
+  margin-bottom: 15px;
+}
+
+main .section-novel .section-inner .novel-box .hero-container .genre h2, main .section-novel .section-inner .novel-box .hero-container .platforms h2 {
+  font-weight: 300;
+  font-size: 18px;
+  color: #ffe5b8;
+}
+
+main .section-novel .section-inner .novel-box .hero-container .genre p, main .section-novel .section-inner .novel-box .hero-container .platforms p {
+  width: 100%;
+  text-align: right;
+}
+
+main .section-novel .section-inner .novel-box .img-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .section-novel .section-inner .novel-box .img-container .poster {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .section-novel .section-inner .novel-box .img-container .poster img {
+  width: 450px;
+  height: 500px;
+}
+
+main .section-novel .section-inner .novel-box .img-container .poster .img-txt {
+  color: rgba(255, 255, 255, 0.568);
+  font-size: 18px;
+  font-weight: 200;
+  margin-top: 20px;
+}
+
+main .section-novel .section-inner .novel-box .img-container .poster .img-txt span {
+  color: #1bb8a5;
+}
+
+main .section-novel .section-inner .novel-box::before {
+  content: "";
+  background-image: url("https://www.projectmoon.kr/eng/img/contents/novel_txt_bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  left: 0;
+}
+
+main .section-novel .section-inner footer {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  padding: 0px 0px 100px 0p;
+}
+
+main .section-novel .section-inner footer .footer-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #6c4f1a;
+  font-family: 'Norwester';
+  font-weight: 400;
+  font-size: 16px;
+  padding: 0px;
+  margin-top: 10px;
+}
+
+main .section-novel .section-inner footer .footer-text h3 {
+  color: #fae5b8;
+  text-shadow: 0 0 7px #fff, 0 0 10px #6c4f1a, 0 0 21px #6c4f1a, 0 0 42px #6c4f1a, 0 0 82px #6c4f1a;
+  margin-right: 10px;
+}
+
+main .section-contact {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 140vh;
+}
+
+main .section-contact .left-line {
+  width: 7%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+}
+
+main .section-contact .section-inner {
+  position: absolute;
+}
+
+main .section-contact .section-inner .contact-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  gap: 50px;
+}
+
+main .section-contact .section-inner .contact-box .hero-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 7%;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+main .section-contact .section-inner .contact-box .hero-container .title {
+  font-size: 90px;
+  font-family: 'norwester';
+  color: #ffe5b8;
+}
+
+main .section-contact .section-inner .contact-box .hero-container .sub-text {
+  font-size: 28px;
+  letter-spacing: -1px;
+  word-spacing: 1px;
+  font-weight: 200;
+}
+
+main .section-contact .section-inner .contact-box .hero-container footer {
+  padding: 10px;
+  position: absolute;
+  bottom: 10%;
+  left: 30px;
+}
+
+main .section-contact .section-inner .contact-box .hero-container footer .footer-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #6c4f1a;
+  font-family: 'Norwester';
+  font-weight: 400;
+  font-size: 16px;
+  padding: 0px;
+  margin-top: 10px;
+}
+
+main .section-contact .section-inner .contact-box .hero-container footer .footer-text h3 {
+  color: white;
+  text-shadow: 0 0 7px #fff, 0 0 10px #6c4f1a, 0 0 21px #6c4f1a, 0 0 42px #6c4f1a, 0 0 82px #6c4f1a;
+  margin-right: 10px;
+}
+
+main .section-contact .section-inner .contact-box .form-box {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-right: 30px;
+  padding-bottom: 102px;
+  height: 100%;
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+
+main .section-contact .section-inner .contact-box .form-box form {
+  height: 100%;
+  padding: 20px;
+  margin-top: 10%;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .title {
+  font-size: 30px;
+  font-family: "norwester";
+  color: #ffe5b8;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content {
+  height: 100%;
+  width: 100%;
+  color: #a09788;
+  font-weight: 300;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .full-width {
+  padding: 20px;
+  border: 1px #444 solid;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .full-width .select-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .full-width .select-container input {
+  background-color: transparent;
+  padding: 10px 0;
+  border: 0;
+  border-bottom: 1px #444 solid;
+  width: 100%;
+  color: #a09788;
+  font-size: 16px;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .full-width .select-container select {
+  border: 0;
+  border-bottom: 1px #444 solid;
+  padding: 10px 0;
+  width: 100%;
+  color: #a09788;
+  background: transparent;
+  font-size: 16px;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .full-width .select-container textarea {
+  width: 100%;
+  border: 0;
+  background-color: transparent;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .half-width {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .half-width .select-container {
+  width: 100%;
+  border: 1px #444 solid;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .half-width .select-container input {
+  background-color: transparent;
+  padding: 10px;
+  border: 0;
+  width: 100%;
+  color: #a09788;
+  font-size: 16px;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .half-width .select-container .phone {
+  border-bottom: 1px #444 solid;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .policy {
+  height: 20%;
+  background-color: transparent;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .policy h2 {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .policy .fully-width {
+  padding: 10px;
+  height: 120px;
+  border: 1px #444 solid;
+  /* Track */
+  /* Handle */
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .policy .fully-width .scrollbar-thing {
+  width: 100%;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .policy .fully-width .scrollbar-thing p {
+  margin-bottom: 30px;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .policy .fully-width .scrollbar-thing::-webkit-scrollbar {
+  width: 4px;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .policy .fully-width .scrollbar-thing::-webkit-scrollbar-track {
+  border-radius: 50px;
+  width: 1px;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .policy .fully-width .scrollbar-thing::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 50px;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .policy .check-box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .policy .check-box-container .check-box {
+  width: 20px;
+  height: 20px;
+  font-size: 22px;
+  position: relative;
+  cursor: pointer;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .policy .check-box-container .check-box #check {
+  border: 1px #1bb8a5 solid;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  z-index: -1;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .policy .check-box-container .check-box label {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .policy .check-box-container .check-box label p {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 1px #1bb8a5 solid;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .policy .check-box-container .check-box label p::after {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  width: 5px;
+  height: 10px;
+  border: 1px #1bb8a5 solid;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-top: 0;
+  border-left: 0;
+  opacity: 1;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .policy .check-box-container .check-box label #check:hover p p::after {
+  background-color: #c39e69;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .policy .check-box-container h2 {
+  color: #1bb8a5;
+  padding: 1px;
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .button {
+  border-color: #1bb8a5;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content .button h3 {
+  color: #1bb8a5;
+  font-weight: 300;
+}
+
+main .section-contact .section-inner .contact-box .form-box form .content > * {
+  margin: 30px;
+}
+
+main .section-contact .section-inner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 150%;
+  background-image: url("https://www.projectmoon.kr/eng/img/contents/bg_contact.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+video {
+  width: 100%;
+}
+
+video #video {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.scroll-cover {
+  background-color: black;
+  width: 50px;
+  height: 25px;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 12;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  z-index: 999;
+}
+
+.scroll .scroll-effect {
+  width: 15px;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    margin-bottom: 50px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    margin-bottom: 50px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0%;
+  }
+}

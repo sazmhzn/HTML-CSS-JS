@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victoria Spicer -London based Set Designer</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./mediaQuery.css">
+  <link type="text/css" rel="stylesheet" href="js/lightslider.css">   
+  <script src="js/javascript.js"></script>
+  <script src="js/lightslider.js"></script>
+
+</head>
+
+<body>
+
+  <!-- the animation part -->
+  <div class="animate-background">
+    <div class="dot-1 dots"></div>
+    <div class="dot-2 dots"></div>
+    <div class="dot-3 dots"></div>
+    <div class="animation-text">
+      <h2>VICTORIA</h2>
+      <h2>SPICER</h2>
+    </div>
+  </div>
+
+<header>
+  <nav>
+    <ul class="nav-bar">
+      <li class="first"><a href="./index.html" id="active">Victoria Spicer</a></li> 
+      <li class="second"><a href="./project.html">Projects</a></li> 
+      <li class="third"><a href="./about.html">About</a></li> 
+      <li class="forth"><a href="./index.html" id="contact-link">Contact</a></li> 
+    </ul>
+  </nav>
+</header> 
+
+  <main>
+
+    <div class="contact">
+      <div class="contact-container">
+        <h1 class="first-line">+44 (0)7938 535747</h1>
+        <h1 class="second-line">vspicer@gmail.com</h1>
+        <h1 class="third-line">@victoriaspicer</h1>
+      </div>
+    </div>
+    
+    <section>
+      <div class="container">
+   
+        <div class="background-images">
+
+          <div class="whole-container">     
+            <div class="left-side"></div>
+            <div class="right-side"></div>
+          </div>
+
+          <div class="cursor" id="arrow-cursor"></div>
+
+          <ul id="adaptive" class="cs-hidden">
+            <li class="item-a first-slider">
+              <img src="https://vspicer.com/wp-content/uploads/2017/06/victoria-spicer-1.jpg" alt="">
+               
+            </li>
+            <li class="item-b">
+              <img src="https://vspicer.com/wp-content/uploads/2017/04/BlackEywear_stills-3-1600x900.jpg" alt="">
+            </li>
+            <li class="item-c">
+              <img src="https://vspicer.com/wp-content/uploads/2017/05/AV059800-banner-1600x900.jpg" alt="">
+            </li>
+
+            <li class="item-d">
+              <img src="https://vspicer.com/wp-content/uploads/2017/04/ally.jpg" alt="">
+            </li>
+            
+          </ul>
+
+          <div class="hero-text">
+            <div class="text "> <h1 class="victoria">VICTORIA</h1> </div>
+            <div class="text "> <h1 class="spicer">SPICER</h1> </div>
+          </div>
+          
+              <!-- <img src="https://vspicer.com/wp-content/uploads/2017/05/AV059800-banner-1600x900.jpg" alt=""> -->
+
+          <div class="name"> 
+            <p><a href="#">Kure Bazar,</a></p>
+            <p><a href="#">Set Designer.</a></p>
+           </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="two-image">
+      <div class="container">
+        <div class="images">
+
+          <div class="first-image"></div>
+          <div class="second-image"></div>
+         
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section three">
+      <div class="container">
+
+        <div class="maginified-image" ><img src="" class="display-none"  ></div>
+        <div class="flex-container">
+          <div class="left paragraph">
+            I love the imprecision <img src="https://vspicer.com/wp-content/uploads/2019/04/Unpolished-08a_web-e1556638503266-600x338.jpg" alt="" class="text-image">  of what I do. My set design practice is a perfect collision of hunting, sourcing, scouring, and making. <img src="https://vspicer.com/wp-content/uploads/2018/09/CDY_PENCIL_F2_WEB-600x338.jpg" alt="" class="text-image">  Thinking, dreaming and constructing.  
+          </div>
+          <div class="right paragraph">
+            Jiggling, juggling things together. <img src="https://vspicer.com/wp-content/uploads/2017/05/AnOther-Manicure-Buff-2-600x338.jpg" alt="" class="text-image">  Connecting what we have found, little bits and pieces, <img src="https://vspicer.com/wp-content/uploads/2018/09/JA003096_web-600x338.jpg" alt="" class="text-image"> into something new. It is inevitably a collaboration game and I love it. <img src="https://vspicer.com/wp-content/uploads/2018/06/ALP_Jessie-Harris_7015_web-e1527872265681-600x338.jpg" alt="" class="text-image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-wrapper">
+        <!--for three boxes-->
+
+        <div class="start paragraph">
+          <p>Victoria Spicer</p>
+          <p>Set Designer</p>
+          <p>London / New Zealand</p>
+        </div>
+        <div class="middle paragraph">
+          <p>+44 (0)7938 535747</p>
+          <p><a href="#">vspicer@gmail.com</a></p>
+          <p><a href="#">@victoriaspicer</a></p>
+        </div>
+        <div class="last paragraph">
+          <p>© 2021 Victoria Spicer</p>
+          <p>Brand by <a href="#">SeaChange</a></p>
+          <p>Website by <a href="#">Grafik</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CURSOR LEFT OR RIGHT -->
+  <script>
+    const cursor = document.querySelector('#arrow-cursor');
+    const leftSide = document.querySelector('.left-side');
+    const rightSide = document.querySelector('.right-side');
+    const header = document.querySelector('header');
+    const backgroundImg = document.querySelector('.background-images')
+    const name = document.querySelector('.name');
+    const firstSlider = document.querySelector('.first-slider')
+    //VARIABLE ENDS HERE  
+
+    backgroundImg.addEventListener('mousemove', (e) => {
+      x = e.clientX;
+      y= e.clientY;
+
+      cursor.style.left = x + 'px';
+      cursor.style.top = y + 'px'
+
+      document.body.style.cursor = 'none'
+
+      if(x >= backgroundImg.getBoundingClientRect().left + 20 &&  x <= backgroundImg.getBoundingClientRect().right - 20) {
+        // YOU ARE INSIDE THE CONTAINER
+        cursor.style.display = 'initial'
+        let mid = (backgroundImg.getBoundingClientRect().width / 2) + 68;
+        
+        if( x < mid ) {
+          //AT THE LEFT SIDE OF THE CONTAINER
+          cursor.classList.remove('cursor');
+          cursor.classList.add('cursor1');
+        } 
+        else if( x >= mid ) {
+          //AT THE RIGTH SIDE OF THE CONTAINER
+          cursor.classList.remove('cursor1');
+          cursor.classList.add('cursor');
+        }
+        
+      } 
+
+      else {
+        cursor.style.display = 'none'
+      }
+
+      //FOr the height of the picture
+      if ( y > backgroundImg.getBoundingClientRect().bottom) {
+        cursor.style.display = 'none'
+      }
+      
+      if( y <= 155 ) {
+        cursor.style.display = 'none'
+      }
+    })
+    
+    if( window.scrollY >= 820 ) {
+      cursor.style.display = 'none'
+    }
+
+    backgroundImg.addEventListener('mouseout', () => {
+      document.body.style.cursor = 'pointer'
+    })
+
+
+    const textImg = document.querySelectorAll('.text-image');
+    const maginifiedImg = document.querySelector('.maginified-image img')
+    const magnify = document.querySelector('.maginified-image')
+    const dispalyNone = document.querySelector('.display-none')
+    const images = [
+    
+      'https://vspicer.com/wp-content/uploads/2019/04/Unpolished-08a_web-e1556638503266-600x338.jpg' ,
+   
+      'https://vspicer.com/wp-content/uploads/2018/09/CDY_PENCIL_F2_WEB-600x338.jpg',
+
+      "https://vspicer.com/wp-content/uploads/2017/05/AnOther-Manicure-Buff-2-600x338.jpg",
+
+      "https://vspicer.com/wp-content/uploads/2018/09/JA003096_web-600x338.jpg",
+
+      "https://vspicer.com/wp-content/uploads/2018/06/ALP_Jessie-Harris_7015_web-e1527872265681-600x338.jpg" 
+    ]
+
+    textImg.forEach( (item, index) => {
+      item.addEventListener('mousemove', (e) => {
+        const srcOfImg = e.srcElement.currentSrc;
+
+        maginifiedImg.classList.remove('display-none')
+
+        let x = e.clientY - 210;
+        let y = e.clientX;
+
+        magnify.style.top = x + 'px';
+        magnify.style.left = y + 'px';
+  
+        magnify.classList.toggle('.display-none')
+        maginifiedImg.src = images[index];
+      })
+    } )
+
+    textImg.forEach( (item) => {
+      item.addEventListener('mouseout', () => {
+        maginifiedImg.classList.add('display-none')
+      })
+    })
+  </script>
+
+  <!-- z-index managameing -->
+  <script>
+    let firstImage = document.querySelector('.first-image');
+    let secondImage = document.querySelector('.second-image');
+    let x;
+    let y;
+
+      firstImage.addEventListener('mouseover', () => {
+        firstImage.style.zIndex = 7; 
+        secondImage.style.zIndex = 6
+        console.log('mouse is over first');
+      })
+
+      secondImage.addEventListener('mouseover', () => {
+        secondImage.style.zIndex = 7;
+        console.log('mouse is over second');
+      })
+
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+
+  <!-- TimelineMax and Tween max -->
+ 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+ <script src="./contactAnimation.js"></script>
+ <script src="./simpleParallex.js"></script>
+
+  <script src="./contactAnimation.js"></script>
+  <script src="./simpleParallex.js"></script>
+
+<!-- Slider jQuery -->
+<script>
+  $(document).ready(function() {
+    var slider = $('#adaptive').lightSlider({
+        adaptiveHeight:true,
+        item:1,
+        slideMargin:0,
+        loop:true,
+        enableTouch:true
+    });
+
+    $('.left-side').click(function(){
+        slider.goToNextSlide(); 
+    });
+
+    $('.right-side').click( function() {
+      slider.goToPrevSlide();
+    })
+    //SLIDER ENDS HERE
+
+
+});
+
+</script>
+
+</body>
+
+</html>

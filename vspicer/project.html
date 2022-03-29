@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Victoria Spicer - London based Set Designer</title>
+  <link rel="stylesheet" href="./project.css">
+</head>
+<body>
+
+  <!-- the animation part -->
+  <!-- <div class="animate-background">
+    <div class="dot-1 dots"></div>
+    <div class="dot-2 dots"></div>
+    <div class="dot-3 dots"></div>
+    <div class="animation-text">
+      <h2>VICTORIA</h2>
+      <h2>SPICER</h2>
+    </div>
+  </div> -->
+
+  <header>
+    <nav>
+      <ul class="nav-bar">
+        <li class="first"><a href="./index.html">Victoria Spicer</a></li> 
+        <li class="second"><a href="./project.html" id="active">Projects</a></li> 
+        <li class="third"><a href="./about.html">About</a></li> 
+        <li class="forth"><a href="./about.html" id="contact-link">Contact</a></li>  
+      </ul>
+    </nav>
+
+    <div class="display-change">
+      <div class="down-box"></div>
+    </div>
+  </header>  
+
+  <main>
+
+    <div class="contact">
+      <div class="contact-container">
+        <h1 class="first-line">+44 (0)7938 535747</h1>
+        <h1 class="second-line">vspicer@gmail.com</h1>
+        <h1 class="third-line">@victoriaspicer</h1>
+      </div>
+    </div>
+
+    <div class="section-number">
+      <p class="page-number">1</p>
+    </div>
+
+    <div class="project-by">
+      <h1 class="change-name">The Week Editiorial </h1>
+      <h3 class="change-sub-name">View Project</h3>
+    </div>
+
+    <div class="section-container">
+
+    <section>
+      <div class="container">
+        <div class="background-image">
+          <a href="#">
+            <div class="image-first">
+              <img src="https://vspicer.com/wp-content/uploads/2020/07/The-Week-Fashion_2_Adrien_Dubost_WEB-736x935.jpg" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="background-image">
+          <a href="#">
+            <div class="image">
+              <img src="https://vspicer.com/wp-content/uploads/2020/01/ALP_Edit_Pre-Fall-2020__Look12_015_Web-1600x900.jpg" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="background-image">
+          <a href="#">
+            <div class="image">
+              <img src="https://vspicer.com/wp-content/uploads/2019/12/ALP_Vogue-Turkey_Cover_SHOT-2_069_web-1466x900.jpg" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="background-image">
+          <a href="#">
+            <div class="image">
+              <img src="https://vspicer.com/wp-content/uploads/2019/12/WOM_KICKHI_CREEPY_web-2-1600x900.jpg" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="background-image">
+          <a href="#">
+            <div class="image">
+              <img src="https://vspicer.com/wp-content/uploads/2019/05/ALP_Closer_Final-Imagery-8_web-1600x900.jpg" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="background-image">
+          <a href="#">
+            <div class="image">
+              <img src="https://vspicer.com/wp-content/uploads/2018/06/20170801_Emoji_Ricoh_217_web-e1558530184173-1500x900.jpg" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    </div>
+    
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-wrapper">
+        <!--for three boxes-->
+
+        <div class="start paragraph">
+          <p>Victoria Spicer</p>
+          <p>Set Designer</p>
+          <p>London / New Zealand</p>
+        </div>
+        <div class="middle paragraph">
+          <p>+44 (0)7938 535747</p>
+          <p><a href="#">vspicer@gmail.com</a></p>
+          <p><a href="#">@victoriaspicer</a></p>
+        </div>
+        <div class="last paragraph">
+          <p>© 2021 Victoria Spicer</p>
+          <p>Brand by <a href="#">SeaChange</a></p>
+          <p>Website by <a href="#">Grafik</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- scroll to change the number -->
+  <script>
+    let pageNUmber = document.querySelector('.page-number');
+    let changeName = document.querySelector('.change-name');
+    let changeSubName = document.querySelector('.change-sub-name')
+    let scroll = document.querySelector('.scroll')
+
+    window.addEventListener('scroll', (e) => {
+      //scroll value
+      let scrollValue = window.pageYOffset;
+
+      console.log(scrollValue);
+
+      if(scrollValue < 328 ) {
+        pageNUmber.innerHTML = 1;
+        changeName.innerHTML = 'The Week Editorial'
+        changeSubName.innerHTML = 'View Project';
+
+      } else if( scrollValue >= 328 && scrollValue < 985 ) {
+        pageNUmber.innerHTML = 2;
+        changeName.innerHTML = 'Pre Fall Lookbook'
+        changeSubName.innerHTML = 'View Project';
+
+      } else if( scrollValue >= 1204 && scrollValue < 1856 ) {
+        pageNUmber.innerHTML = 3;
+        changeName.innerHTML = 'VOGUE Turkey'
+        changeSubName.innerHTML = 'View Project';
+
+      } else if( scrollValue >= 1868 && scrollValue < 2627 ) {
+        pageNUmber.innerHTML = 4;
+        changeName.innerHTML = 'Kickers AW19 Campaign'
+        changeSubName.innerHTML = 'View Project';
+        
+      } else if( scrollValue >= 2730 && scrollValue < 3393 ) {
+        pageNUmber.innerHTML = 5;
+        changeName.innerHTML = 'Closer'
+        changeSubName.innerHTML = 'View Project';
+
+      } else if( scrollValue >= 3502 && scrollValue < 4156 ) {
+        pageNUmber.innerHTML = 6;
+        changeName.innerHTML = 'Bug Lookbook';
+        changeSubName.innerHTML = 'View Project';
+
+      } else if( scrollValue >= 4264) {
+        pageNUmber.innerHTML = "";
+        changeName.innerHTML = '';
+        changeSubName.innerHTML = '';
+      }
+
+    })
+
+  </script>
+
+  <!-- for flex change -->
+  <script>
+    const displayChange = document.querySelector('.display-change');
+    const sectionContainer = document.querySelector('.section-container');
+    const project = document.querySelector('.project-by')
+    const sectionNumber = document.querySelector('.section-number')
+    let count = 0;
+
+    displayChange.onclick = () => {
+      
+      count++;
+      
+      if( count % 2 === 0 ) {
+        sectionContainer.style.flexWrap = 'nowrap'
+        project.style.display = 'none'
+        sectionNumber.style.display = 'none'
+      } else {  
+        sectionContainer.style.flexWrap = 'wrap'
+        project.style.display = 'block'
+        sectionNumber.style.display = 'block'
+      }
+      
+    }
+
+  </script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+
+  <!--tweeLite min js-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+  <script src="./contactAnimation.js"></script>
+  <script src="./simpleParallex.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+body .animate-background {
+  background-color: #f3cfd9;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 30;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  pointer-events: none;
+  line-height: 1.4;
+}
+
+body .animate-background .dot-1, body .animate-background .dot-2, body .animate-background .dot-3 {
+  background: black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  position: absolute;
+}
+
+body .animate-background .dot-1 {
+  top: 33%;
+  left: 40.8%;
+}
+
+body .animate-background .dot-2 {
+  top: 33%;
+  left: 57.4%;
+}
+
+body .animate-background .dot-3 {
+  top: 49%;
+  left: 47.2%;
+}
+
+body .animate-background .animation-text {
+  display: inline-block;
+  width: auto;
+  text-align: center;
+}
+
+body .animate-background .animation-text h2 {
+  font-size: 5rem;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 150px;
+  z-index: 20;
+}
+
+header nav {
+  width: 100%;
+  height: 100%;
+}
+
+header nav .nav-bar {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+header nav .nav-bar li {
+  padding: 0 25px;
+  font-size: 21px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+header nav .nav-bar li a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav .nav-bar #active {
+  text-decoration: underline;
+}
+
+header .display-change {
+  width: 60px;
+  height: 40px;
+  position: fixed;
+  right: 5%;
+  top: 5%;
+}
+
+header .display-change .down-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+header .display-change .down-box:hover {
+  background-color: black;
+}
+
+header .display-change .down-box::before {
+  content: "";
+  width: 15px;
+  height: 10px;
+  position: absolute;
+  bottom: 20%;
+  left: 20%;
+  background-color: white;
+}
+
+header .display-change .down-box::after {
+  content: "";
+  width: 15px;
+  height: 10px;
+  position: absolute;
+  bottom: 20%;
+  right: 20%;
+  background-color: white;
+}
+
+header .display-change::before {
+  content: "";
+  width: 15px;
+  height: 10px;
+  background-color: white;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  z-index: 2;
+}
+
+header .display-change::after {
+  content: "";
+  width: 15px;
+  height: 10px;
+  background-color: #ffffff;
+  position: absolute;
+  right: 20%;
+  top: 20%;
+  z-index: 2;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+main .contact {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(77, 14, 3, 0.932);
+  pointer-events: none;
+  opacity: 0;
+}
+
+main .contact .contact-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+main .contact .contact-container h1 {
+  font-size: 100px;
+  color: white;
+}
+
+main .show-opacity {
+  opacity: 1;
+}
+
+main .section-number {
+  position: fixed;
+  top: 70%;
+  margin: 5%;
+  z-index: 2;
+}
+
+main .section-number p {
+  color: white;
+  font-size: 25px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+main .project-by {
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+main .project-by h1 {
+  font-size: 70px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+main .project-by h3 {
+  font-size: 25px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+main .section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section .container {
+  width: 100%;
+}
+
+main section .container .background-image {
+  height: 110vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+main section .container .background-image a .image-first {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+main section .container .background-image a .image-first img {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 110vh;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main section .container .background-image a .image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+main section .container .background-image a .image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  width: 100%;
+  height: 50vh;
+  background-color: #f3dfe2;
+  z-index: 90000;
+}
+
+footer .container {
+  margin: 0 0%;
+  height: 90%;
+}
+
+footer .container .footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 10%;
+  height: 100%;
+}
+
+footer .container .footer-wrapper .paragraph {
+  text-align: center;
+  font-size: 20px;
+}
+
+footer .container .footer-wrapper .paragraph a {
+  color: black;
+}
+
+footer .container .footer-wrapper .paragraph:nth-child(2) {
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    height: 100px;
+  }
+  header a {
+    font-size: 17px;
+  }
+  .contact h1 {
+    font-size: 40px !important;
+  }
+  .section-number .page-number {
+    font-size: 20px;
+  }
+  .project-by h1 {
+    font-size: 40px !important;
+    margin-bottom: 10px !important;
+  }
+  footer {
+    height: 30vh;
+  }
+  footer .footer-wrapper {
+    gap: 30px !important;
+  }
+  footer .footer-wrapper .paragraph {
+    font-size: 15px !important;
+  }
+}

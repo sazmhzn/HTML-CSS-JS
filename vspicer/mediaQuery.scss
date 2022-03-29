@@ -1,0 +1,197 @@
+
+@media screen and (max-width: 700px) {
+  header {
+    height: 100px;
+
+    a{
+      font-size: 17px;
+    }
+  } 
+
+  .contact {
+    h1 {
+      font-size: 40px !important;
+    }
+  }
+  
+    .container {
+      margin: 0% 0% !important;
+
+      .background-images {
+        background-color: transparent;
+        width: 100%;
+
+        .hero-text {
+          //background-color: red;
+
+          .victoria {
+            position: relative;
+            font-size: 55px;
+          }
+          .victoria::after {
+            content: "";
+            position: absolute;
+            width: 20px !important;
+            height: 20px !important;
+            left: 19% !important;
+          }
+
+          .victoria::before {
+            content: "";
+            position: absolute;
+            width: 20px !important;
+            height: 20px !important;
+            right: 20% !important;
+          }
+
+          .spicer {
+            position: relative;
+            font-size: 55px;
+          }
+
+
+          .spicer::after {
+            content: "";
+            position: absolute;
+            width: 20px !important;
+            height: 20px !important;
+            top: -25% !important;
+          }
+        }
+
+        .name {
+
+          position: relative ;
+
+        }
+
+        .name::after {
+          content: "";
+          width: 15px !important;
+          height: 15px !important;
+          z-index: 100 !important;
+            
+        }        
+
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+
+    .two-image {
+      display: none;
+    }
+
+    .three {
+    
+      .flex-container {
+        display: flex;
+        align-items: flex-start !important;
+        gap: 10px !important;
+        padding: 0 35px;
+
+        .paragraph {
+          font-size: 30px !important;
+          
+        }
+      }
+      
+    }
+
+    footer {
+      height: 30vh;
+
+      .footer-wrapper {
+        gap: 30px !important;
+
+        .paragraph {
+          font-size: 15px !important;
+        }
+      }
+
+      
+    }
+
+  
+}
+
+@media screen and (max-width: 400px) {
+
+  header {
+    height: 70px;
+
+    li {
+      padding: 0 12px !important;
+
+      a {
+        font-size: 15px !important;
+      }
+    }
+  }
+
+  body {
+
+    section {
+
+        .hero-text {
+
+          .victoria {
+            position: relative;
+            font-size: 40px !important;
+          }
+
+          .victoria::after {
+            content: "";
+            position: absolute;
+            top: -30% !important; 
+            display: none;
+
+          }
+
+          .victoria::before {
+            content: "";
+            display: none;
+          }
+
+          .spicer {
+            font-size: 40px !important;
+          }
+
+          .spicer::after{
+            content: "";
+            display: none;
+          }
+        }
+      
+    }
+
+    .three {
+
+      .flex-container {
+        flex-direction: column;
+        
+        .paragraph {
+          font-size: 25px !important;
+
+          .text-image {
+            width: 50px;
+          }
+        }
+      }
+
+    
+    }
+
+    footer {
+
+
+      .footer-wrapper {
+
+        .paragraph {
+          font-size: 10px !important;
+        }
+      }
+    }
+  }
+}

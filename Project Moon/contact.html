@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Moon</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <a href="#">
+            <img src="https://www.projectmoon.kr/eng/img/com/logo.png" alt="logo">
+          </a>     
+        </div>
+        <div class="links">
+          <div class="link">
+            <ul class="left-link">
+              <li><a href="./main.html">HOME</a></li>
+              <li>
+                
+                <div class="dropdown">
+                  <a href="./about.html" class="down">ABOUT</a>
+                  <div class="dropdown-content">
+                    <a href="#">Vision</a>
+                    <a href="#">People</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <a href="./games.html">GAMES</a>
+                  <div class="dropdown-content dropdown-game">
+                    <a href="#">LIBRARY OF RUINA</a>
+                    <a href="#">LOBOTOMY CORPORATION</a>
+                  </div>
+                </div>
+                
+              </li>
+              <li><a href="./comics.html">COMICS</a></li>
+              <li><a href="./novel.html">NOVEL</a></li>
+              <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+          
+          
+            <div class="lan-twitter">
+              <ul>
+                <li><a href="#"><div class="eng">ENG</div></a></li>
+  
+                <li><a href="#"><img src="https://www.projectmoon.kr/eng/img/com/icon_twitter.svg" class="twitter" alt=""></a></li>
+              </ul>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="section-contact">
+        <div class="left-line"></div>
+        <div class="section-inner">
+          <div class="contact-box">
+            <div class="hero-container">
+              <div class="title">
+                Contact
+              </div>
+              <div class="sub-text">
+                Send us questions or inquiries.
+              </div>
+
+                <footer>
+                  <div class="footer-text">
+                    <h3>PROJECT MOON </h3>
+                    <p>  COPYRIGHT © 2020 PROJECTMOON ALL RIGHT RESERVED</p>
+                  </div>
+              </footer>
+            </div>
+
+            <div class="form-box">
+              <form action="">
+              <div class="title">Contact Us</div>
+              <div class="content">
+                <div class="full-width">
+                  <div class="select-container">
+                    <label for="category">Category</label>
+                    <select id="category">
+                      <option value>Select</option>
+                      <option value="분류2">분류2</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="half-width">
+                  <div class="select-container">
+                    <label for="name">Name</label>
+                    <input type="text">
+                  </div>
+                  <div class="select-container">
+                    <label for="phone">Phone</label>
+                    <input type="text" maxlength="3" class="phone">
+                    <input type="text" maxlength="3" class="phone">
+                    <input type="text" maxlength="3" class="phone">
+                  </div>
+                </div>
+
+                <div class="full-width">
+                  <div class="select-container">
+                    <label for="Email">Email</label>
+                    <input type="text">@
+                    <input type="text">
+                    <select id="category">
+                      <option value>Please chose one</option>
+                      <option value="분류2">hotmail.com</option>
+                      <option value="분류2">gmail.com</option>
+                      <option value="분류2">yahoo.com</option>
+                      <option value="분류2">msn.com</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="full-width">
+                  <div class="select-container" style="display: flex; flex-direction: column; align-items: flex-start;">
+                    <label for="Message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                  </div>
+                </div>
+
+                <div class="policy">
+                  <h2>Privacy Policy Agreement</h2>
+                  <div class="fully-width">
+                    <div class="scrollbar-thing">
+                      <p>
+                        1. Purpose of Collecting and Using Personal Information
+                        The company will use the collected information for the following purposes:<br>
+                        - Handling received messages and sending replies<br>
+                        ※ You have the right to decline the privacy policy agreement; however, please note that your message may not be handled and replied to in time if you decline. 
+                      </p>
+
+                      <p>
+                        2. Categories of Personal Data Collected<br>
+                        For ethical management, we collect the following information: <br>
+                        Essential Fields: Category, Name, Contact Information (Phone Number), Email Address, Title, Message
+                      </p>
+                      
+                      <p>
+                        3. Period of Retaining Personal Information <br>
+                        * Period of Retention: 5 years after the message was handled <br>
+                        * Basis of Retention: The information will be destroyed as soon as it has fulfilled its purpose, according to the internal policy of the company. However, when required to preserve the data by law, the data will be retained for the period declared by the legislation.
+                      </p>
+                    </div>
+                    
+                  </div>
+
+                  <div class="check-box-container">
+
+                   <div class="check-box">
+                      <input type="checkbox" id="check">
+                      <label for="check">
+                        <p id="tick-marks"></p>
+                      </label>
+                    </div>
+                    
+                    <h2>(Essential) I agree to the Privacy Policy for Protection of Personal Data.</h2>
+
+                  </div>
+                </div>
+
+                <div class="full-width button" style="text-align: center;">
+                  <h3>SEND</h3>
+                </div>
+
+              </div>
+            </form>
+            </div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous"></script>
+  
+  <script>
+
+    let lastKnownScrollPosition = 0;
+    let ticking = false;
+    const header = document.querySelector("header");
+    
+    function doSomething(scrollPos) {
+      // Do something with the scroll position
+    
+    }
+    
+    document.addEventListener('scroll', function(e) {
+      lastKnownScrollPosition = window.scrollY;
+    
+      if ( lastKnownScrollPosition >= 86 ) {
+        console.log('more');
+        header.style.backgroundColor = 'black';
+      } else {
+        header.style.backgroundColor = 'transparent';
+      }
+    
+    });
+    
+    </script>
+  
+</body>
+</html>
