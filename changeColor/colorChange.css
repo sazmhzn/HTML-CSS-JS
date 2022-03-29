@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: sans-serif;
+  font-size: 24px;
+  background-color: azure;
+}
+
+header {
+  position: relative;
+  height: 10%;
+  width: 100%;
+  background-color: beige;
+  box-shadow: 1px 1px 10px 0px black;
+}
+
+.the-font {
+  background-color:transparent;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  font-size: 20px;
+}
+
+#main-body {
+  width: 100%;
+  height: 90%;
+  z-index: -1;
+
+}
+
+#container {
+  background-color: tomato;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.small-conainer-for-flex {
+  width: 40%;
+  height: 20%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flexContainer {
+
+  color: whitesmoke; 
+  width: 100%;
+  text-align: center;
+  flex: 1;
+  
+}
+
+.flexContainer1 {
+  background-color: transparent;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  
+}
+
+.flexContainer1::before {
+  content: "";
+  width: 100px;
+  height: 39px;
+  background-color: #81585b;
+  border-radius: 5px;
+  
+  position: absolute;
+  top: 12px;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  background-color: #976569;
+  color: rgb(233, 222, 222);
+  width: 100px;
+  height: 40px;
+  transition: 0.2s ease-in-out;
+  outline: transparent;
+  position: absolute;
+  
+}
+
+/* the hover thingy */
+button:hover {
+  background-color: #755053;
+  color: #ffd6d6;
+  top: 12px;
+}
