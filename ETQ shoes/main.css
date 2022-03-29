@@ -1,0 +1,628 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: poppins;
+}
+
+body a {
+  color: black;
+  text-decoration: none;
+}
+
+header {
+  margin: 0px;
+  padding: 10px;
+  height: 80px;
+  width: 100%;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  z-index: 2;
+}
+
+header .logo_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo_container .for_logo {
+  font-size: 25px;
+  letter-spacing: 10px;
+  font-weight: bolder;
+  margin-left: 25px;
+}
+
+header .logo_container a {
+  color: black;
+  text-decoration: none;
+}
+
+header nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .links ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav .links ul li {
+  font-size: 12px;
+  padding-inline: 20px;
+}
+
+header .account_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-inline: 20px;
+}
+
+header .account_logo .circle {
+  width: 32px;
+  height: 32px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  padding: 8px;
+}
+
+main .space {
+  height: 80px;
+  width: 100%;
+  background-color: white;
+}
+
+main .first {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .first img {
+  width: 1100px;
+  height: 100vh;
+}
+
+main .first .hero {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .first .hero .knits {
+  padding-bottom: 10px;
+}
+
+main .first .hero .knits h3, main .first .hero .knits h2, main .first .hero .knits p {
+  margin-bottom: 10px;
+}
+
+main .first .hero .knits a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+
+main .first .hero .knits a::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  width: 100%;
+  height: 2px;
+  background-color: gray;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .first .hero .knits a:hover::after {
+  width: 0;
+}
+
+main .section-two {
+  height: auto;
+}
+
+main .section-two .container {
+  margin: 0 5% 0 3%;
+  padding: 5% 0 0 0;
+}
+
+main .section-two .container .second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .section-two .container .second .story {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .section-two .container .second .story .img-container {
+  width: 250px;
+  height: 300px;
+  position: relative;
+}
+
+main .section-two .container .second .story .img-container img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+main .section-two .container .second .story .img_desc h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+main .section-two .container .second .story .img_desc p {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+main .section-two .container .second .story .img_desc a {
+  position: relative;
+}
+
+main .section-two .container .second .story .img_desc a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .section-two .container .second .story .img_desc a:hover::after {
+  width: 0;
+}
+
+main .section-three .container {
+  margin: 0 5% 0 3%;
+  padding: 5% 0 0 0;
+}
+
+main .section-three .container .fav_model_header {
+  padding: 10px;
+  margin: 0 0 10px 0;
+}
+
+main .section-three .container .fav_model_header .fav_model_title {
+  width: auto;
+}
+
+main .section-three .container .fav_model_header .fav_model_title h2 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+main .section-three .container .shoes_display_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  width: 100%;
+  overflow: hidden;
+}
+
+main .section-three .container .shoes_display_container .shoes_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .section-three .container .shoes_display_container .shoes_card .img_container {
+  margin-bottom: 10px;
+}
+
+main .section-three .container .shoes_display_container .shoes_card .img_container img {
+  width: 440px;
+}
+
+main .section-three .container .shoes_display_container .shoes_card .img_description h3 {
+  font-size: 12px;
+  font-weight: 550;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+main .section-three .container .shoes_display_container .shoes_card .img_description p {
+  font-size: 12px;
+  font-weight: 550;
+  margin-bottom: 5px;
+}
+
+main .section-four .container {
+  margin: 0 5% 0 3%;
+  padding: 5% 0 0 0;
+}
+
+main .section-four .container .img_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+main .section-four .container .img_wrapper .img_container {
+  height: 600px;
+  width: 100%;
+}
+
+main .section-four .container .img_wrapper .img_container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 550px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+main .section-four .container .img_wrapper .img_description h3 {
+  font-size: 12px;
+  font-weight: 550;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+main .section-four .container .img_wrapper .img_description p {
+  font-size: 12px;
+  font-weight: 550;
+  margin-bottom: 5px;
+}
+
+main .men-section .container {
+  margin: 0 5% 0 3%;
+  padding: 5% 0 0 0;
+}
+
+main .men-section .container .flex-wrapper .first-row, main .men-section .container .flex-wrapper .second-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .men-section .container .flex-wrapper .first-row figure, main .men-section .container .flex-wrapper .second-row figure {
+  margin-bottom: 30px;
+}
+
+main .men-section .container .flex-wrapper .first-row figure .img_container, main .men-section .container .flex-wrapper .second-row figure .img_container {
+  height: 340px;
+}
+
+main .men-section .container .flex-wrapper .first-row figure .img_container img, main .men-section .container .flex-wrapper .second-row figure .img_container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+main .men-section .container .flex-wrapper .first-row figure .img_description h3, main .men-section .container .flex-wrapper .second-row figure .img_description h3 {
+  font-size: 12px;
+  font-weight: 550;
+  margin-bottom: 5px;
+}
+
+main .men-section .container .flex-wrapper .first-row figure .img_description p, main .men-section .container .flex-wrapper .second-row figure .img_description p {
+  font-size: 12px;
+  font-weight: 550;
+  margin-bottom: 5px;
+}
+
+main .men-section .container .flex-wrapper .first-row figure .big_one, main .men-section .container .flex-wrapper .second-row figure .big_one {
+  height: 450px;
+}
+
+main .men-section .container .flex-wrapper .first-row figure .big_one img, main .men-section .container .flex-wrapper .second-row figure .big_one img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+main .shoes_care .container {
+  margin: 0 5% 0 3%;
+  padding: 5% 0 0 0;
+}
+
+main .shoes_care .container .flex-wrapper .first-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .shoes_care .container .flex-wrapper .first-row figure {
+  margin-bottom: 30px;
+}
+
+main .shoes_care .container .flex-wrapper .first-row figure .img_container {
+  height: 460px;
+  margin-bottom: 10px;
+}
+
+main .shoes_care .container .flex-wrapper .first-row figure .img_container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+main .shoes_care .container .flex-wrapper .first-row figure figcaption .img_description h3 {
+  font-size: 12px;
+  font-weight: 550;
+  margin-bottom: 5px;
+}
+
+main .shoes_care .container .flex-wrapper .first-row figure figcaption .img_description p {
+  font-size: 12px;
+  font-weight: 550;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+footer .container {
+  margin: 0 5% 0 3%;
+  padding: 5% 0 0 0;
+}
+
+footer .container .wrapper {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "about about address contact info follow" "newsletter newsletter submit company company term";
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 50px;
+  padding-bottom: 30px;
+}
+
+footer .container .wrapper .footer_about {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: about;
+  width: 85%;
+}
+
+footer .container .wrapper .footer_address {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: address;
+}
+
+footer .container .wrapper .footer_contact {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: contact;
+}
+
+footer .container .wrapper .footer_info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: info;
+}
+
+footer .container .wrapper .footer_follow {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+  grid-area: follow;
+}
+
+footer .container .wrapper .newsletter_form {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: newsletter;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 550;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+footer .container .wrapper .newsletter_form input {
+  border: none;
+  padding: 5px;
+  position: relative;
+  border-width: 0 0 1px 0;
+  border-color: #8a8a8a;
+  border-style: solid;
+  width: 70%;
+}
+
+footer .container .wrapper .submit {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: submit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .container .wrapper .submit button {
+  border: 0;
+  background-color: transparent;
+  position: relative;
+}
+
+footer .container .wrapper .submit button::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #868686;
+  z-index: 2;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+footer .container .wrapper .submit button:hover::after {
+  width: 0;
+}
+
+footer .container .wrapper .company {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-area: company;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+footer .container .wrapper .company img {
+  height: 40px;
+  width: 40px;
+}
+
+footer .container .wrapper .terms {
+  -ms-grid-row: 2;
+  -ms-grid-column: 6;
+  grid-area: term;
+}
+
+footer .container .wrapper .terms span {
+  font-size: 10px;
+}
+
+footer .container .wrapper > * h3 {
+  font-size: 12px;
+  font-weight: 550;
+  margin-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+footer .container .wrapper > * p {
+  font-size: 12px;
+  font-weight: 550;
+  margin-bottom: 5px;
+  line-height: 1.5;
+  font-weight: 400;
+}
